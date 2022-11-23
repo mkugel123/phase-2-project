@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import FoodCard from "./FoodCard";
 import EditFoodForm from "./EditFoodForm";
+import AddFoodForm from "./AddFoodForm";
 
-function MyPortal({ foodItems, isLoggedIn, onEditFoodFormSubmit}) {
+function MyPortal({ foodItems, isLoggedIn, onAddFoodFormSubmit, onEditFoodFormSubmit}) {
 
-  const [isClicked, setIsClicked] = useState(0)
+  const [isClicked, setIsClicked] = useState(false)
+  const [clickedItem, setClickedItem] = useState(0)
   const [selectedFoodData, setSelectedFoodData] = useState([])
 
   function handleClick(foodItem) {
-    setIsClicked(foodItem.id)
+    if(clickedItem === foodItem.id){
+      setClickedItem(0)
+      return null
+    }
+    setClickedItem(foodItem.id)
     setSelectedFoodData({
       ...selectedFoodData,
       id: foodItem.id,
@@ -26,7 +32,7 @@ function MyPortal({ foodItems, isLoggedIn, onEditFoodFormSubmit}) {
           action="Edit"
           handleClick={()=>handleClick(foodItem)}
         />
-        {isClicked === foodItem.id ? (
+        {clickedItem === foodItem.id ? (
           <EditFoodForm
             selectedFoodData={selectedFoodData}
             onEditFoodFormSubmit={onEditFoodFormSubmit}
@@ -40,7 +46,8 @@ function MyPortal({ foodItems, isLoggedIn, onEditFoodFormSubmit}) {
 
   return(
     <div>
-      <button>Add Item</button>
+      <button onClick={() => setIsClicked(!isClicked)}>Add Item</button>
+      {isClicked ? <AddFoodForm onAddFoodFormSubmit={onAddFoodFormSubmit}/> : null}
       {menu}
     </div>
   )

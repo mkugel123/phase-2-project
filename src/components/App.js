@@ -41,6 +41,13 @@ function App() {
     }
   }
 
+  function handleAddFoodFormSubmit(foodItem) {
+    setFoodItems([
+      ...foodItems,
+      foodItem
+    ])
+  }
+
   function handleEditFoodFormSubmit(updatedFoodItem) {
     const updatedFoodItems = foodItems.map(foodItem => {
       if(updatedFoodItem.id === foodItem.id) {
@@ -76,6 +83,7 @@ function App() {
           <MyPortal 
             isLoggedIn={isLoggedIn}
             foodItems={foodItems}
+            onAddFoodFormSubmit={handleAddFoodFormSubmit}
             onEditFoodFormSubmit={handleEditFoodFormSubmit}
           />
         </Route>
