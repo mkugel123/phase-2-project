@@ -43,7 +43,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <NavBar cartItems={cartItems}/>
       <Switch>
         <Route exact path="/menu">
           <MenuPage

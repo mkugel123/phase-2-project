@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar() {
+function NavBar({ cartItems }) {
+
   return(
     <>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/menu">Menu</NavLink>
-      <NavLink to="/cart">Cart</NavLink>
-      <NavLink to="/login">Log in</NavLink>
+      <NavLink to="/" exact>Home</NavLink>
+      <NavLink to="/menu" exact>Menu</NavLink>
+      <NavLink to="/cart" exact>Cart {cartItems.length}</NavLink>
+      <NavLink to="/login" exact>Log in</NavLink>
     </>
   )
 }
