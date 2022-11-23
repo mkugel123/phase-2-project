@@ -28,18 +28,34 @@ function AddFoodForm({ onAddFoodFormSubmit }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <select name="category" value={formData.category} onChange={handleChange}>
-        <option value="meat">Meat</option>
-        <option value="fish">Fish</option>
-        <option value="soup">Soup</option>
-      </select>
-      <input type="text" placeholder="name" name="name" value={formData.name} onChange={handleChange}/>
-      <input type="text" placeholder="image url" name="image" value={formData.image} onChange={handleChange}/>
-      <input type="number" placeholder="price" name="price" value={formData.price} onChange={handleChange}/>
-      {formData.category !== "soup" ? <input type="text" placeholder="side" name="side" value={formData.side} onChange={handleChange}/> : null}
-      <button type="submit">Add Food</button>
-    </form>
+    <div className="card fixed">
+      <form onSubmit={handleSubmit}>
+        <select name="category" value={formData.category} onChange={handleChange}>
+          <option value="meat">Meat</option>
+          <option value="fish">Fish</option>
+          <option value="soup">Soup</option>
+        </select>
+        <br />
+        <label>Name: </label>
+        <input type="text" placeholder="name" name="name" value={formData.name} onChange={handleChange}/>
+          <br/>
+          <label>Image: </label>
+          <input type="text" placeholder="image url" name="image" value={formData.image} onChange={handleChange}/>
+          <br/>
+          <label>Price: </label>
+          <input type="number" placeholder="price" name="price" value={formData.price} onChange={handleChange}/>
+          <br/>
+          {formData.category.category !== "soup" ? (
+            <>
+              <label>Side: </label>
+              <input type="text" placeholder="side" name="side" value={formData.side} onChange={handleChange}/>
+              <br/>
+            </>
+          )  : null}
+          <button type="submit">Add Food</button>
+      </form>
+    </div>
+    
   )
 }
 

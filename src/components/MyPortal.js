@@ -3,7 +3,7 @@ import FoodCard from "./FoodCard";
 import EditFoodForm from "./EditFoodForm";
 import AddFoodForm from "./AddFoodForm";
 
-function MyPortal({ foodItems, isLoggedIn, onAddFoodFormSubmit, onEditFoodFormSubmit}) {
+function MyPortal({ foodItems, onAddFoodFormSubmit, onEditFoodFormSubmit}) {
 
   const [isClicked, setIsClicked] = useState(false)
   const [clickedItem, setClickedItem] = useState(0)
@@ -18,8 +18,11 @@ function MyPortal({ foodItems, isLoggedIn, onAddFoodFormSubmit, onEditFoodFormSu
     setSelectedFoodData({
       ...selectedFoodData,
       id: foodItem.id,
+      image: foodItem.image,
       name: foodItem.name,
-      price: foodItem.price
+      price: foodItem.price,
+      side: foodItem.side,
+      category: foodItem.category
     })
   }
   
@@ -45,8 +48,8 @@ function MyPortal({ foodItems, isLoggedIn, onAddFoodFormSubmit, onEditFoodFormSu
   })
 
   return(
-    <div>
-      <button onClick={() => setIsClicked(!isClicked)}>Add Item</button>
+    <div className="card-container">
+      <button className="fixed" onClick={() => setIsClicked(!isClicked)}>Add Item</button>
       {isClicked ? <AddFoodForm onAddFoodFormSubmit={onAddFoodFormSubmit}/> : null}
       {menu}
     </div>

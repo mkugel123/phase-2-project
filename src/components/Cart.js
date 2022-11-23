@@ -21,7 +21,7 @@ function Cart({ cartItems, onCartItemClick }) {
   })
 
   return(
-    <div id="cart">
+    <div className="card-container">
       {cart}
     </div>
   )

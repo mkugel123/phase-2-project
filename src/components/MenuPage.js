@@ -20,7 +20,7 @@ function MenuPage({ foodItems, onfoodItemClick }) {
   })
 
   return (
-    <div id="menu">
+    <div className="card-container">
       {menu}
     </div>
   )

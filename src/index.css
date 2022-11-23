@@ -8,5 +8,25 @@ body {
 }
 
 img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
   width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px
+}
+
+.fixed {
+  position: absolute;
 }

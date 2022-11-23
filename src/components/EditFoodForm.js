@@ -25,11 +25,27 @@ function EditFoodForm({ selectedFoodData, onEditFoodFormSubmit }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder={selectedFoodData.name} name="name" value={formData.name} onChange={handleChange}/>
-      <input type="number" placeholder={selectedFoodData.price} name="price" value={formData.price} onChange={handleChange}/>
-      <button type="submit">Save Changes</button>
-    </form>
+    <div className="card">
+      <form onSubmit={handleSubmit}>
+        <label>Name: </label>
+        <input type="text" name="name" value={formData.name} onChange={handleChange}/>
+        <br/>
+        <label>Image: </label>
+        <input type="text" name="image" value={formData.image} onChange={handleChange}/>
+        <br/>
+        <label>Price: </label>
+        <input type="number" name="price" value={formData.price} onChange={handleChange}/>
+        <br/>
+        {selectedFoodData.category !== "soup" ? (
+          <>
+            <label>Image: </label>
+            <input type="text" name="side" value={formData.side} onChange={handleChange}/>
+            <br/>
+          </>
+        )  : null}
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
   )
 }
 

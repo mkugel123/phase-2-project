@@ -11,7 +11,7 @@ function App() {
 
   const [foodItems, setFoodItems] = useState([])
   const [cartItems, setCartItems] = useState([])
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(true)
 
   useEffect(() => {
     fetch("http://localhost:8000/foods")
@@ -60,7 +60,11 @@ function App() {
 
   return (
     <>
-      <NavBar cartItems={cartItems}/>
+      <NavBar 
+        isLoggedIn={isLoggedIn}
+        setIsLoggedIn={setIsLoggedIn}
+        cartItems={cartItems}
+      />
       <Switch>
         <Route exact path="/menu">
           <MenuPage
@@ -79,7 +83,8 @@ function App() {
             onLoginSubmit={handleLoginSubmit}
           />
         </Route>
-        <Route exact path="/myportal">
+        {isLoggedIn ? (
+          <Route exact path="/myportal">
           <MyPortal 
             isLoggedIn={isLoggedIn}
             foodItems={foodItems}
@@ -87,6 +92,7 @@ function App() {
             onEditFoodFormSubmit={handleEditFoodFormSubmit}
           />
         </Route>
+        ) : null}
         <Route exact path="/">
           <Home />
         </Route>
