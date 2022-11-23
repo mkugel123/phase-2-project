@@ -10,9 +10,12 @@ function MenuPage({ foodItems, onfoodItemClick }) {
     }
 
     return (
-      <FoodCard key={foodItem.id} item={foodItem}>
-        <button onClick={handleClick}>Add to cart</button>
-      </FoodCard>
+      <FoodCard 
+        key={foodItem.name} 
+        item={foodItem}
+        action="Add to cart"
+        handleClick={handleClick}
+      />
     )
   })
 

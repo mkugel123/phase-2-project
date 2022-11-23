@@ -1,120 +1,119 @@
 {
-    "foods": [
-        {
-            "id": "1",
-            "name": "Shnitzel & Chips",
-            "image": "https://thumbs.dreamstime.com/b/chicken-schnitzel-breaded-fries-potatoes-40166642.jpg",
-            "category": "meat",
-            "price": 40,
-            "side": "Corn on the Cob"
-        },
-        {
-            "id": "2",
-            "name": "Stir Fried Chicken and Vegetables served with Thin Noodles",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQslFdGKTCC_kKmtxKChSRT3XlJy08srK_GLQ&usqp=CAU",
-            "category": "meat",
-            "price": 40,
-            "side": "Roasted Peppers"
-        },
-        {
-            "id": "3",
-            "name": "Grilled Basil Garlic Boneless Chicken",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3l8V_imDmnx_xjeHencjp3War42iBDCwnwQ&usqp=CAU",
-            "category": "meat",
-            "price": 40,
-            "side": "Spiced Mini Potatoes and Roasted Summer Vegetables"
-        },
-        {
-            "id": "4",
-            "name": "Glazed Sweet and Sour Chicken",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-keUxxyNYvF5AhCwLMw8rS2KRDRqnko35bA&usqp=CAU",
-            "category": "meat",
-            "price": 40,
-            "side": "Basmati Rice and Roasted Garlic Green Beans"
-        },
-        {
-            "id": "5",
-            "name": "Delicious Oven-Barbecued Chicken",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgWJ2X2C1DMiuL9RXoXNZ0jH5eZlA8bUT2g&usqp=CAU",
-            "category": "meat",
-            "price": 40,
-            "side": "Couscous and Roasted Summer Vegetables"
-        },
-        {
-            "id": "6",
-            "name": "Cod Fish & Chips",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagxlKx7OIULMCA2Wdwf0KyYlXQwPXT2r_3g&usqp=CAU",
-            "category": "fish",
-            "price": 40,
-            "side": "Corn on the Cob"
-        },
-        {
-            "id": "7",
-            "name": "Salmon Teriyaki with Sesame Noodles",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTmqxV_30G2qKu2TeprNMCVR4Mg50xM5fHyA&usqp=CAU",
-            "category": "fish",
-            "price": 40,
-            "side": "Roasted Peppers"
-        },
-        {
-            "id": "8",
-            "name": "Honey Mustard Glazed Salmon",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dnHUu4XYtqxw6S8iVYQQiP4-S0etJ17f1Q&usqp=CAU",
-            "category": "fish",
-            "price": 40,
-            "side": "Spiced Mini Potatoes and Roasted Summer Vegetables"
-        },
-        {
-            "id": "9",
-            "name": "Salmon Fillet in lemon-dill Sauce",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVM87-K6FzrYX2G9w-uNauDfNBxFrXugr0lg&usqp=CAU",
-            "category": "fish",
-            "price": 40,
-            "side": "Basmati Rice and Roasted Garlic Green Beans"
-        },
-        {
-            "id": "10",
-            "name": "Spiced Salmon Fillet",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XjDvf41o7FIXzEJAMB4r23eju9mTJh30Aw&usqp=CAU",
-            "category": "fish",
-            "price": 40,
-            "side": "Couscous and Roasted Summer Vegetables"
-        },
-        {
-            "id": "11",
-            "name": "Cream of Zucchini",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdDexkFCvU2fCMIUGnyVl3gUUcNSpoqcq1Ew&usqp=CAU",
-            "category": "soup",
-            "price": 15
-        },
-        {
-            "id": "12",
-            "name": "Vegetable Split Pea",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpe_aZsBEEvtWkiI1lkDk1jMmfXXedF5gXg&usqp=CAU",
-            "category": "soup",
-            "price": 15
-        },
-        {
-            "id": "13",
-            "name": "Butternut Squash",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi23FsTNSeEJ7tu1SX0D9prFhblWcmNuzJmg&usqp=CAU",
-            "category": "soup",
-            "price": 15
-        },
-        {
-            "id": "14",
-            "name": "Cream of Broccoli",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZP_IjRXCUS827BiA44R3JgfoxLK4BWGfBg&usqp=CAU",
-            "category": "soup",
-            "price": 15
-        },
-        {
-            "id": "15",
-            "name": "Potato Leek",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewPNcr6u1G6n7Z1walrin9kH8cNgT4vvRyA&usqp=CAU",
-            "category": "soup",
-            "price": 15
-        }    
-    ]
+  "foods": [
+    {
+      "id": "1",
+      "name": "Shnitzel & Chips",
+      "image": "https://thumbs.dreamstime.com/b/chicken-schnitzel-breaded-fries-potatoes-40166642.jpg",
+      "category": "meat",
+      "price": "40",
+      "side": "Corn on the Cob"
+    },
+    {
+      "id": "2",
+      "name": "Stir Fried Chicken and Vegetables served with Thin Noodles",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQslFdGKTCC_kKmtxKChSRT3XlJy08srK_GLQ&usqp=CAU",
+      "category": "meat",
+      "price": 40,
+      "side": "Roasted Peppers"
+    },
+    {
+      "id": "3",
+      "name": "Grilled Basil Garlic Boneless Chicken",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3l8V_imDmnx_xjeHencjp3War42iBDCwnwQ&usqp=CAU",
+      "category": "meat",
+      "price": "40",
+      "side": "Spiced Mini Potatoes and Roasted Summer Vegetables"
+    },
+    {
+      "id": "4",
+      "name": "Glazed Sweet and Sour Chicken",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-keUxxyNYvF5AhCwLMw8rS2KRDRqnko35bA&usqp=CAU",
+      "category": "meat",
+      "price": "40",
+      "side": "Basmati Rice and Roasted Garlic Green Beans"
+    },
+    {
+      "id": "5",
+      "name": "Delicious Oven-Barbecued Chicken",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgWJ2X2C1DMiuL9RXoXNZ0jH5eZlA8bUT2g&usqp=CAU",
+      "category": "meat",
+      "price": 40,
+      "side": "Couscous and Roasted Summer Vegetables"
+    },
+    {
+      "id": "6",
+      "name": "Cod Fish & Chips",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagxlKx7OIULMCA2Wdwf0KyYlXQwPXT2r_3g&usqp=CAU",
+      "category": "fish",
+      "price": 40,
+      "side": "Corn on the Cob"
+    },
+    {
+      "id": "7",
+      "name": "Salmon Teriyaki with Sesame Noodles",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTmqxV_30G2qKu2TeprNMCVR4Mg50xM5fHyA&usqp=CAU",
+      "category": "fish",
+      "price": 40,
+      "side": "Roasted Peppers"
+    },
+    {
+      "id": "8",
+      "name": "Honey Mustard Glazed Salmon",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dnHUu4XYtqxw6S8iVYQQiP4-S0etJ17f1Q&usqp=CAU",
+      "category": "fish",
+      "price": 40,
+      "side": "Spiced Mini Potatoes and Roasted Summer Vegetables"
+    },
+    {
+      "id": "9",
+      "name": "Salmon Fillet in lemon-dill Sauce",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVM87-K6FzrYX2G9w-uNauDfNBxFrXugr0lg&usqp=CAU",
+      "category": "fish",
+      "price": 40,
+      "side": "Basmati Rice and Roasted Garlic Green Beans"
+    },
+    {
+      "id": "10",
+      "name": "Spiced Salmon Fillet",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XjDvf41o7FIXzEJAMB4r23eju9mTJh30Aw&usqp=CAU",
+      "category": "fish",
+      "price": 40,
+      "side": "Couscous and Roasted Summer Vegetables"
+    },
+    {
+      "id": "11",
+      "name": "Cream of Zucchini",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdDexkFCvU2fCMIUGnyVl3gUUcNSpoqcq1Ew&usqp=CAU",
+      "category": "soup",
+      "price": 15
+    },
+    {
+      "id": "12",
+      "name": "Vegetable Split Pea",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpe_aZsBEEvtWkiI1lkDk1jMmfXXedF5gXg&usqp=CAU",
+      "category": "soup",
+      "price": 15
+    },
+    {
+      "id": "13",
+      "name": "Butternut Squash",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi23FsTNSeEJ7tu1SX0D9prFhblWcmNuzJmg&usqp=CAU",
+      "category": "soup",
+      "price": 15
+    },
+    {
+      "id": "14",
+      "name": "Cream of Broccoli",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZP_IjRXCUS827BiA44R3JgfoxLK4BWGfBg&usqp=CAU",
+      "category": "soup",
+      "price": 15
+    },
+    {
+      "id": "15",
+      "name": "Potato Leek",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewPNcr6u1G6n7Z1walrin9kH8cNgT4vvRyA&usqp=CAU",
+      "category": "soup",
+      "price": 15
+    }
+  ]
 }
-

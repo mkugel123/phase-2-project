@@ -10,10 +10,13 @@ function Cart({ cartItems, onCartItemClick }) {
     }
 
     return(
-      <FoodCard key={cartItem.name} item={cartItem}>
-        <button onClick={handleClick}>Remove from cart</button>
-        <p>X{cartItem.amount}</p>
-      </FoodCard>
+      <FoodCard 
+        key={cartItem.name} 
+        item={cartItem}
+        action="Remove from cart"
+        handleClick={handleClick}
+      />
+
     )
   })
 

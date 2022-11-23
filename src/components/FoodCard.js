@@ -1,6 +1,6 @@
 import React from "react";
 
-function FoodCard({ item, children }) {
+function FoodCard({ item, handleClick, action }) {
   const {name, image, price, side, category} = item
   return (
     <>
@@ -8,7 +8,7 @@ function FoodCard({ item, children }) {
       <img src={image} alt={name}/>
       {category === "soup" ? null : <p><strong>Side: </strong>{side}</p>}
       <p>Price: ${price}</p>
-      {children}
+      <button onClick={handleClick}>{action}</button>
     </>
   );
 }

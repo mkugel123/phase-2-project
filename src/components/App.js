@@ -41,6 +41,16 @@ function App() {
     }
   }
 
+  function handleEditFoodFormSubmit(updatedFoodItem) {
+    const updatedFoodItems = foodItems.map(foodItem => {
+      if(updatedFoodItem.id === foodItem.id) {
+        return updatedFoodItem
+      }
+      return foodItem
+    })
+    setFoodItems(updatedFoodItems)
+  }
+
   return (
     <>
       <NavBar cartItems={cartItems}/>
@@ -57,15 +67,22 @@ function App() {
             onCartItemClick={handleCartItemClick}
           />
         </Route>
-       <Route exact path="/login">
-        <Login 
+        <Route exact path="/login">
+          <Login 
             onLoginSubmit={handleLoginSubmit}
           />
-       </Route>
-       <Route>
-          <Home exact path="/"/>
         </Route>
-        {isLoggedIn ? <MyPortal /> : null}
+        <Route exact path="/myportal">
+          <MyPortal 
+            isLoggedIn={isLoggedIn}
+            foodItems={foodItems}
+            onEditFoodFormSubmit={handleEditFoodFormSubmit}
+          />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+       
       </Switch> 
     </>
   );
