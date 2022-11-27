@@ -25,7 +25,6 @@ function EditFoodForm({ selectedFoodData, onEditFoodFormSubmit }) {
   }
 
   return (
-    <div className="card">
       <form onSubmit={handleSubmit}>
         <label>Name: </label>
         <input type="text" name="name" value={formData.name} onChange={handleChange}/>
@@ -45,7 +44,6 @@ function EditFoodForm({ selectedFoodData, onEditFoodFormSubmit }) {
         )  : null}
         <button type="submit">Save Changes</button>
       </form>
-    </div>
   )
 }
 

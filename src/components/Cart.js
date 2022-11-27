@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FoodCard from "./FoodCard";
+import Grid from '@mui/material/Grid';
 
 function Cart({ cartItems, onCartItemClick }) {
 
@@ -21,9 +22,13 @@ function Cart({ cartItems, onCartItemClick }) {
   })
 
   return(
-    <div className="card-container">
+    <Grid 
+      container 
+      spacing={4}
+      justifyContent="center"
+    >
       {cart}
-    </div>
+    </Grid>
   )
 }
 

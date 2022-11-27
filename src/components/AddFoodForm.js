@@ -28,7 +28,6 @@ function AddFoodForm({ onAddFoodFormSubmit }) {
   }
 
   return (
-    <div className="card fixed">
       <form onSubmit={handleSubmit}>
         <select name="category" value={formData.category} onChange={handleChange}>
           <option value="meat">Meat</option>
@@ -45,7 +44,7 @@ function AddFoodForm({ onAddFoodFormSubmit }) {
           <label>Price: </label>
           <input type="number" placeholder="price" name="price" value={formData.price} onChange={handleChange}/>
           <br/>
-          {formData.category.category !== "soup" ? (
+          {formData.category !== "soup" ? (
             <>
               <label>Side: </label>
               <input type="text" placeholder="side" name="side" value={formData.side} onChange={handleChange}/>
@@ -54,7 +53,6 @@ function AddFoodForm({ onAddFoodFormSubmit }) {
           )  : null}
           <button type="submit">Add Food</button>
       </form>
-    </div>
     
   )
 }

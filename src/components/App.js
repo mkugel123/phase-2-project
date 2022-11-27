@@ -11,7 +11,7 @@ function App() {
 
   const [foodItems, setFoodItems] = useState([])
   const [cartItems, setCartItems] = useState([])
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   useEffect(() => {
     fetch("http://localhost:8000/foods")

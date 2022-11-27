@@ -1,5 +1,7 @@
 import React from "react";
 import FoodCard from "./FoodCard";
+import Grid from '@mui/material/Grid';
+
 
 function MenuPage({ foodItems, onfoodItemClick }) {
 
@@ -20,9 +22,13 @@ function MenuPage({ foodItems, onfoodItemClick }) {
   })
 
   return (
-    <div className="card-container">
+    <Grid 
+      container 
+      spacing={4}
+      justifyContent="center"
+    >
       {menu}
-    </div>
+    </Grid>
   )
 }
 

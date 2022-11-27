@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import FoodCard from "./FoodCard";
 import EditFoodForm from "./EditFoodForm";
 import AddFoodForm from "./AddFoodForm";
+import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 
 function MyPortal({ foodItems, onAddFoodFormSubmit, onEditFoodFormSubmit}) {
 
@@ -29,30 +31,36 @@ function MyPortal({ foodItems, onAddFoodFormSubmit, onEditFoodFormSubmit}) {
   const menu = foodItems.map(foodItem => {
 
     return (
-      <div key={foodItem.id} >
-        <FoodCard 
+      
+        <FoodCard
+          key={foodItem.id}
           item={foodItem}
           action="Edit"
           handleClick={()=>handleClick(foodItem)}
-        />
+        >
         {clickedItem === foodItem.id ? (
           <EditFoodForm
             selectedFoodData={selectedFoodData}
             onEditFoodFormSubmit={onEditFoodFormSubmit}
           />
         ) : null}  
-      </div>
-     
+        </FoodCard>
     )
     
   })
 
   return(
-    <div className="card-container">
-      <button className="fixed" onClick={() => setIsClicked(!isClicked)}>Add Item</button>
+    <>
+      <Button sx={{margin: "50px"}} onClick={() => setIsClicked(!isClicked)}>Add Item</Button>
       {isClicked ? <AddFoodForm onAddFoodFormSubmit={onAddFoodFormSubmit}/> : null}
-      {menu}
-    </div>
+      <Grid 
+        container 
+        spacing={4}
+        justifyContent="center"
+      >
+        {menu}
+      </Grid>
+    </>
   )
 }
 
