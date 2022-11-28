@@ -37,7 +37,7 @@ function EditFoodForm({ selectedFoodData, onEditFoodFormSubmit }) {
         <br/>
         {selectedFoodData.category !== "soup" ? (
           <>
-            <label>Image: </label>
+            <label>Side: </label>
             <input type="text" name="side" value={formData.side} onChange={handleChange}/>
             <br/>
           </>

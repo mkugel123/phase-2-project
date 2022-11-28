@@ -16,7 +16,9 @@ function Cart({ cartItems, onCartItemClick }) {
         item={cartItem}
         action="Remove from cart"
         handleClick={handleClick}
-      />
+      >
+        {cartItem.amount > 1 ? <span>X{cartItem.amount}</span> : null}
+      </FoodCard>
 
     )
   })

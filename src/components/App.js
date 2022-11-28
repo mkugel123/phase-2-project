@@ -22,6 +22,26 @@ function App() {
   function handleFoodItemClick(id) {
     const selectedFood = foodItems.find(foodItem => foodItem.id === id)
     
+    const isFound = cartItems.some(element => {
+      if (element.id === selectedFood.id) {
+        return true;
+      }
+    
+      return false;
+    });
+
+    if(isFound){
+      const updatedCartItems = cartItems.map(cartItem => {
+        if (cartItem.id === selectedFood.id){
+          cartItem.amount+=1
+        } return cartItem
+      })
+      setCartItems(updatedCartItems)
+      return true
+    }
+
+    selectedFood.amount = 1
+
     setCartItems([
       ...cartItems,
       selectedFood
@@ -30,6 +50,17 @@ function App() {
 
   function handleCartItemClick(id) {
     const selectedFood = cartItems.find(cartItem => cartItem.id === id)
+
+    if(selectedFood.amount > 1){
+      const updatedCartItems = cartItems.map(cartItem => {
+        if (cartItem.id === selectedFood.id){
+          cartItem.amount-=1
+        } return cartItem
+      })
+      setCartItems(updatedCartItems)
+      return true
+    }
+
     setCartItems(cartItems.filter(cartItem => cartItem.id !== selectedFood.id))
   }
 
