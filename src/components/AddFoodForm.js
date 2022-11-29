@@ -16,7 +16,7 @@ function AddFoodForm({ onAddFoodFormSubmit }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-    fetch('http://localhost:8000/foods', {
+    fetch('https://restaurant-food.onrender.com/foods', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {

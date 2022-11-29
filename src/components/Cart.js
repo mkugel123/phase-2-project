@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import FoodCard from "./FoodCard";
 import Grid from '@mui/material/Grid';
 
@@ -17,7 +17,7 @@ function Cart({ cartItems, onCartItemClick }) {
         action="Remove from cart"
         handleClick={handleClick}
       >
-        {cartItem.amount > 1 ? <span>X{cartItem.amount}</span> : null}
+      <span>X{cartItem.amount}</span>
       </FoodCard>
 
     )

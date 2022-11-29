@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardHeader from '@mui/material/CardHeader';
 import Grid from '@mui/material/Grid';
-import { textAlign } from "@mui/system";
 
 function FoodCard({ item, handleClick, action, children }) {
   const {name, image, price, side, category} = item

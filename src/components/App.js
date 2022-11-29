@@ -14,7 +14,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   useEffect(() => {
-    fetch("http://localhost:8000/foods")
+    fetch("https://restaurant-food.onrender.com/foods")
     .then(r => r.json())
     .then(food => setFoodItems(food))
   }, [])
@@ -116,13 +116,13 @@ function App() {
         </Route>
         {isLoggedIn ? (
           <Route exact path="/myportal">
-          <MyPortal 
-            isLoggedIn={isLoggedIn}
-            foodItems={foodItems}
-            onAddFoodFormSubmit={handleAddFoodFormSubmit}
-            onEditFoodFormSubmit={handleEditFoodFormSubmit}
-          />
-        </Route>
+            <MyPortal 
+              isLoggedIn={isLoggedIn}
+              foodItems={foodItems}
+              onAddFoodFormSubmit={handleAddFoodFormSubmit}
+              onEditFoodFormSubmit={handleEditFoodFormSubmit}
+            />
+          </Route>
         ) : null}
         <Route exact path="/">
           <Home />

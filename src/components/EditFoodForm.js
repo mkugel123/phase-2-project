@@ -13,7 +13,7 @@ function EditFoodForm({ selectedFoodData, onEditFoodFormSubmit }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-    fetch(`http://localhost:8000/foods/${selectedFoodData.id}`, {
+    fetch(`https://restaurant-food.onrender.com/foods/${selectedFoodData.id}`, {
       method: 'PATCH',
       body: JSON.stringify(formData),
       headers: {
