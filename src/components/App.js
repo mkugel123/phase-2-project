@@ -16,7 +16,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   useEffect(() => {
-    fetch("https://restaurant-food.onrender.com/foods")
+    fetch("http://localhost:8000/foods")
     .then(r => r.json())
     .then(food => setFoodItems(food))
   }, [])
