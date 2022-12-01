@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Restaurant App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Restaurant App is a program where you can update and add menu items for your restaurant and where customers can add menu items to their cart.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+Visit https://63869687e9e83c3a1f901126--gregarious-chebakia-88cfd7.netlify.app/ and you're all set.
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###### Homepage:
+When you visit the site you are directed to the homepage where it says "Welcome to my Restaurant".
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###### Menu:
+Navigate to the Menu tab where you will find a list of menu items displayed as individual cards. At the bottom of each card there is a button that says "Add to cart". Upon clicking that button, the menu item you chose will be added to the cart and the number in the Cart tab at the top of the page will go up to reflect how many items have been added.
 
-### `npm test`
+###### Cart:
+Now navigate to the Cart tab where you will see all the items you have added, in the same format they are seen in the menu only this time the button says "Remove from cart". And below that it indicates how many of the above item have been added to the cart. When you press the button either the item count will go down or the card will disappear from view.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###### Login:
+In the login tab you will be prompted to enter your username and password. Upon entering the correct login info, a new tap will appear "My Portal".
 
-### `npm run build`
+###### My Portal: 
+In the my portal tab you now have access to all the menu items and can edit each one. you can also add a new menu item by pressing the "Add Item" button and filling out the required fields. After saving the changes of an edit or submitting a new item the new or updated item will appear in the menu.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
