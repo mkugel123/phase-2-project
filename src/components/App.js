@@ -12,7 +12,6 @@ function App() {
   const [foodItems, setFoodItems] = useState([])
   const [cartItems, setCartItems] = useState([])
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const [restaurantName, setRestaurantName] = useState
 
   useEffect(() => {
     fetch("https://restaurant-food.onrender.com/foods")
