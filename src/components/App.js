@@ -5,9 +5,11 @@ import NavBar from './NavBar';
 import Cart from './Cart';
 import Login from './Login';
 import MyPortal from './MyPortal';
-import { Switch, Route } from "react-router-dom"
+import { Switch, Route, useHistory } from "react-router-dom"
 
 function App() {
+
+  const history = useHistory();
 
   const [foodItems, setFoodItems] = useState([])
   const [cartItems, setCartItems] = useState([])
@@ -69,6 +71,7 @@ function App() {
   function handleLoginSubmit(loginData) {
     if(loginData.user === correctUser.user && loginData.pass === correctUser.pass){
       setIsLoggedIn(true)
+      history.push("myportal")
     }
   }
 
