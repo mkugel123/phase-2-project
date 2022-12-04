@@ -66,7 +66,7 @@ function App() {
     setCartItems(cartItems.filter(cartItem => cartItem.id !== selectedFood.id))
   }
 
-  const correctUser = {user: "Moish Kugel", pass: "is awesome"}
+  const correctUser = {user: "John Smith", pass: "restaurant"}
 
   function handleLoginSubmit(loginData) {
     if(loginData.user === correctUser.user && loginData.pass === correctUser.pass){
