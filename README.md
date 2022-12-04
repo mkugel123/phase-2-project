@@ -18,7 +18,7 @@ Navigate to the Menu tab where you will find a list of menu items displayed as i
 Now navigate to the Cart tab where you will see all the items you have added, in the same format they are seen in the menu only this time the button says "Remove from cart". And below that it indicates how many of the above item have been added to the cart. When you press the button either the item count will go down or the card will disappear from view.
 
 ###### Login:
-In the login tab you will be prompted to enter your username and password. Upon entering the correct login info, a new tap will appear "My Portal".
+In the login tab you will be prompted to enter your username and password. Upon entering the correct login info, (For deployed site, user: John Smith, pass: restaurant) a new tap will appear "My Portal".
 
 ###### My Portal: 
 In the my portal tab you now have access to all the menu items and can edit each one. you can also add a new menu item by pressing the "Add Item" button and filling out the required fields. After saving the changes of an edit or submitting a new item the new or updated item will appear in the menu.
